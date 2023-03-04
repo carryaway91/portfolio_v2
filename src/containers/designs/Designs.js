@@ -14,8 +14,10 @@ const Designs = () => {
   const [chosen, setChosen] = useState();
 
   const managePopup = (img) => {
-    setChosen(img);
-    setPopup(true);
+    if (window.innerWidth > 1140) {
+      setChosen(img);
+      setPopup(true);
+    }
   };
   return (
     <Wrap id="designs">
