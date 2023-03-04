@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const Wrap = styled.div`
   height: 103vh;
@@ -11,6 +11,15 @@ export const Wrap = styled.div`
   }
 `;
 
+export const Heading = styled.h1`
+  display: none;
+  @media (max-width: 1140px) {
+    font-size: 3rem;
+    display: block;
+    color: #b3aeae;
+    text-align: center;
+  }
+`;
 export const Me = styled.img`
   width: 50%;
   align-self: center;
@@ -18,6 +27,7 @@ export const Me = styled.img`
 
   @media (max-width: 1140px) {
     border-radius: 1rem;
+    width: 100%;
   }
 `;
 

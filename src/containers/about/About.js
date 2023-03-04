@@ -1,10 +1,11 @@
 import React from "react";
-import { ArrowContainer, Description, Me, Wrap } from "./AboutStyles";
+import { ArrowContainer, Description, Heading, Me, Wrap } from "./AboutStyles";
 import mePC from "../../img/pc-me.jpg";
 import Arrow from "../../img/Arrow";
 const About = () => {
   return (
     <Wrap id="about">
+      <Heading>About Me</Heading>
       <Me src={mePC} />
       <Description>
         <h3>About</h3>
