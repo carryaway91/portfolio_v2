@@ -8,4 +8,8 @@ export const Wrap = styled.div`
   @media (max-width: 1200px) {
     align-items: center;
   }
+
+  @media (max-width: 1140px) {
+    height: auto;
+  }
 `;

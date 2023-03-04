@@ -5,6 +5,7 @@ export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  overflow: hidden;
 `;
 
 export const Hero = styled.div`

@@ -7,6 +7,7 @@ export const Wrap = styled.div`
 
   @media (max-width: 1140px) {
     flex-direction: column;
+    justify-content: center;
   }
 `;
 

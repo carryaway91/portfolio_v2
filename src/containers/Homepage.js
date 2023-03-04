@@ -14,7 +14,6 @@ const Homepage = () => {
   const homepage = useRef(null);
 
   useEffect(() => {
-    document.body.style.overflow = "hidden";
     document.addEventListener("scroll", (e) => {
       if (window.scrollY > 0) {
         setBg(true);
@@ -41,7 +40,7 @@ const Homepage = () => {
     }, 400);
   };
   return (
-    <Wrap ref={homepage} style={{ overflow: "hidden" }}>
+    <Wrap ref={homepage}>
       <MainNav bg={bg} removeLinkItem={navItemActive} visible={nav} />
       <Hero id="wrap">
         <Inner>

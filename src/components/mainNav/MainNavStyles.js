@@ -28,6 +28,10 @@ export const Content = styled.div`
 export const RightPanel = styled.div`
   display: flex;
   align-self: center;
+
+  @media (max-width: 1140px) {
+    display: none;
+  }
 `;
 export const LinkItem = styled.div`
   display: inline-block;

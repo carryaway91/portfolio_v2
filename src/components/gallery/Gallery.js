@@ -7,7 +7,7 @@ import mine from "../../img/mine.png";
 import cards from "../../img/cards.png";
 import mobile from "../../img/mobile.png";
 import chatty from "../../img/chatty.png";
-import { Overlay, ProjectImg } from "./GalleryStyles";
+import { Frame, Heading, Overlay, ProjectImg } from "./GalleryStyles";
 
 const Gallery = () => {
   const [projects, setProjects] = useState([
@@ -62,16 +62,10 @@ const Gallery = () => {
   ]);
   return (
     <div>
+      <Heading>Websites</Heading>
       {projects &&
         projects.map((p, idx) => (
-          <div
-            key={idx}
-            style={{
-              position: "relative",
-              display: "inline-block",
-              width: "33.3%",
-            }}
-          >
+          <Frame key={idx}>
             <ProjectImg src={p.img} />
             <Overlay>
               <a href={p.link} style={{ width: "100%", height: "100%" }}>
@@ -79,7 +73,7 @@ const Gallery = () => {
                 {<p>{p.text}</p>}
               </a>
             </Overlay>
-          </div>
+          </Frame>
         ))}
     </div>
   );

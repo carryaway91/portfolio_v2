@@ -5,7 +5,7 @@ import city from "../../img/city.png";
 import dog from "../../img/dog.jpg";
 import pokemon from "../../img/pokemon.png";
 import plant from "../../img/plant.jpg";
-import { Overlay, Wrap } from "./DesignsStyles";
+import { Heading, Inner, Overlay, Wrap } from "./DesignsStyles";
 import Popup from "../../components/popup/Popup";
 
 const Designs = () => {
@@ -19,24 +19,16 @@ const Designs = () => {
   };
   return (
     <Wrap id="designs">
+      <Heading>Designs</Heading>
       {designs &&
         designs.map((d, idx) => (
-          <div
-            key={idx}
-            style={{
-              width: "33.3%",
-              display: "flex",
-              float: "left",
-              alignItems: "center",
-              background: "black",
-            }}
-          >
+          <Inner key={idx}>
             <img
               src={d}
               style={{ cursor: "pointer", width: "100%" }}
               onClick={() => managePopup(d)}
             />
-          </div>
+          </Inner>
         ))}
       {popup && <Popup design={chosen} />}
       {popup && <Overlay onClick={() => setPopup(false)} />}
