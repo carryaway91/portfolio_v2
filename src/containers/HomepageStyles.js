@@ -37,6 +37,11 @@ export const ScrollTop = styled.div`
   right: 2vw;
   z-index: 210;
   cursor: pointer;
+
+  @media (max-width: 1140px) {
+    width: 4rem;
+    height: 4rem;
+  }
 `;
 
 export const Inner = styled.div`
