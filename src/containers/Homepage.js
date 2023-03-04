@@ -1,65 +1,74 @@
-import React, { useEffect, useRef, useState } from 'react'
-import LeftPanel from '../components/leftPanel/LeftPanel'
-import MainNav from '../components/mainNav/MainNav'
-import RightPanel from '../components/rightPanel/RightPanel'
-import Arrow from '../img/Arrow'
-import About from './about/About'
-import Designs from './designs/Designs'
-import { Hero, Rect, ScrollTop, Wrap } from './HomepageStyles'
-import MyWork from './myWork/MyWork'
+import React, { useEffect, useRef, useState } from "react";
+import LeftPanel from "../components/leftPanel/LeftPanel";
+import MainNav from "../components/mainNav/MainNav";
+import RightPanel from "../components/rightPanel/RightPanel";
+import Arrow from "../img/Arrow";
+import About from "./about/About";
+import Designs from "./designs/Designs";
+import { Hero, Inner, Rect, ScrollTop, Wrap } from "./HomepageStyles";
+import MyWork from "./myWork/MyWork";
 
 const Homepage = () => {
   const [bg, setBg] = useState(false);
   const [scrollTop, setScrollTop] = useState(false);
   const homepage = useRef(null);
 
-
   useEffect(() => {
-    document.body.style.overflow = "hidden"
-    document.addEventListener('scroll', (e) => {
-      if(window.scrollY > 0) {
-        setBg(true)
+    document.body.style.overflow = "hidden";
+    document.addEventListener("scroll", (e) => {
+      if (window.scrollY > 0) {
+        setBg(true);
       } else {
-        setBg(false)
+        setBg(false);
       }
-      if(window.scrollY > 100) {
-        setScrollTop(true)
-        removeNavItemActive(false)
+      if (window.scrollY > 100) {
+        setScrollTop(true);
+        removeNavItemActive(false);
       } else {
-        setScrollTop(false)
+        setScrollTop(false);
       }
-
-    })
-  }, [])
-  const [navItemActive, removeNavItemActive] = useState(false)
-  const [nav, setNav] = useState(false)
+    });
+  }, []);
+  const [navItemActive, removeNavItemActive] = useState(false);
+  const [nav, setNav] = useState(false);
 
   const scrollUp = () => {
-   window.scrollTo(0,0)
-   removeNavItemActive(true)
-   setNav(true)
-   setTimeout(() => { setNav(false)}, 400)
-  }
+    window.scrollTo(0, 0);
+    removeNavItemActive(true);
+    setNav(true);
+    setTimeout(() => {
+      setNav(false);
+    }, 400);
+  };
   return (
-    <Wrap ref={homepage} style={{ overflow: "hidden"}}>
-        <MainNav bg={bg} removeLinkItem={navItemActive} visible={nav} />
-        <Hero id="wrap">
-          <div style={{ display: 'flex', height: 'calc(100vh - 85px'}}>
-            <LeftPanel  />
-            <RightPanel />
+    <Wrap ref={homepage} style={{ overflow: "hidden" }}>
+      <MainNav bg={bg} removeLinkItem={navItemActive} visible={nav} />
+      <Hero id="wrap">
+        <Inner>
+          <LeftPanel />
+          <RightPanel />
+        </Inner>
+      </Hero>
+      <Rect />
+      <About />
+      <MyWork />
+      <Designs />
+      {scrollTop && (
+        <ScrollTop onClick={() => scrollUp()}>
+          <div
+            style={{
+              width: "70%",
+              transform: "rotate(180deg)",
+              position: "relative",
+              top: "-3px",
+            }}
+          >
+            <Arrow width="30" />
           </div>
-        </Hero>
-        <Rect />
-        <About/>
-        <MyWork />
-        <Designs />
-        { scrollTop && <ScrollTop onClick={() => scrollUp()}>
-          <div style={{ width: "70%", transform: 'rotate(180deg)', position: 'relative', top: '-3px'}}>
-            <Arrow width="30"/>
-          </div>
-          </ScrollTop>}
+        </ScrollTop>
+      )}
     </Wrap>
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;
