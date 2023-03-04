@@ -6,6 +6,8 @@ export const Wrap = styled.div`
   display: flex;
 
   @media (max-width: 1140px) {
+    height: auto;
+
     flex-direction: column;
     justify-content: center;
   }
