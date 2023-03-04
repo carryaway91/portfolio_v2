@@ -10,6 +10,10 @@ export const Wrap = styled.div`
   transition: all 0.2s ease-in-out;
   background: ${(props) => (props.bg ? "white" : "transparent")};
   opacity: ${(props) => (props.nav ? 1 : 0)};
+
+  @media (max-width: 1140px) {
+    position: static;
+  }
 `;
 export const Logo = styled.a`
   font-size: 2rem;
