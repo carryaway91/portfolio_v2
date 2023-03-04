@@ -12,9 +12,9 @@ const About = () => {
         <p>
           My name is Peter Babej-Kmec, and I am currently located in Kosice,
           Slovakia. My first encounter with programming was when I was studying
-          translation and interpretation in college. It was love at first sight.
-          The very idea that you can create something and put it on the internet
-          for anyone to see and use was fascinating to me.
+          translation and interpretation at the university. It was love at first
+          sight. The very idea that you can create something and put it on the
+          internet for anyone to see and use was fascinating to me.
         </p>
         <p>
           Right away I started to play around with web design and was searching
