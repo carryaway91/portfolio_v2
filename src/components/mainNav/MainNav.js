@@ -62,7 +62,7 @@ const MainNav = ({ bg, removeLinkItem, visible }) => {
           </RightPanel>
         </Content>
       </Wrap>
-      <div style={{ height: "85px" }} />
+      {window.innerWidth > 1140 && <div style={{ height: "85px" }} />}
     </div>
   );
 };
