@@ -80,4 +80,14 @@ export const Inner = styled.div`
   @media (max-width: 800px) and (max-height: 578px) {
     justify-content: center;
   }
+
+  @media (max-width: 400px) and (min-height: 578px) {
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
 `;
