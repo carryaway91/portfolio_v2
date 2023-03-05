@@ -13,6 +13,9 @@ export const Wrap = styled.div`
     @media (max-width: 1370px) {
       font-size: 4rem;
     }
+    @media (max-width: 400px) {
+      font-size: 2.5rem;
+    }
   }
 
   p {
@@ -20,6 +23,10 @@ export const Wrap = styled.div`
     font-size: 2rem;
     @media (max-width: 1370px) {
       font-size: 1.5rem;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 1rem;
     }
   }
 `;
