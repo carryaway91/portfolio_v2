@@ -16,14 +16,14 @@ const Gallery = () => {
     {
       name: "Desktop Clone",
       img: desktop,
-      link: "https://react-insta-stories-seven.vercel.app/",
-      text: "ReactJS, Typescript, Styled-components",
+      link: "https://desktop-angular.vercel.app/",
+      text: "Angular, Typescript",
     },
     {
       name: "Instagram Clone",
       img: ig,
-      link: "https://desktop-angular.vercel.app/",
-      text: "Angular, Typescript",
+      link: "https://react-insta-stories-seven.vercel.app/",
+      text: "ReactJS, Typescript, Styled-components",
     },
     {
       name: "Facebook Clone",
