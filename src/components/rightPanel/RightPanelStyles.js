@@ -9,8 +9,7 @@ export const Wrap = styled.div`
   bottom: -6vh;
 `;
 export const Img = styled.img`
-  min-height: 23rem;
-  max-height: 102vh;
+  height: 100vh;
   position: relative;
   z-index: -1;
   &::selection {
