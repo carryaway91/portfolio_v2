@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Wrap = styled.div`
-  max-width: 1920px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
