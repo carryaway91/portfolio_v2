@@ -7,15 +7,23 @@ import mine from "../../img/mine.png";
 import cards from "../../img/cards.png";
 import mobile from "../../img/mobile.png";
 import chatty from "../../img/chatty.png";
+import desktop from "../../img/desktop.png";
+
 import { Frame, Heading, Overlay, ProjectImg } from "./GalleryStyles";
 
 const Gallery = () => {
   const [projects, setProjects] = useState([
     {
-      name: "Instagram Clone",
-      img: ig,
+      name: "Desktop Clone",
+      img: desktop,
       link: "https://react-insta-stories-seven.vercel.app/",
       text: "ReactJS, Typescript, Styled-components",
+    },
+    {
+      name: "Instagram Clone",
+      img: ig,
+      link: "https://desktop-angular.vercel.app/",
+      text: "Angular, Typescript",
     },
     {
       name: "Facebook Clone",
