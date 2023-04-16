@@ -26,7 +26,7 @@ const About = () => {
         </p>
         <p>
           I am interested in everything, basically: frontend, backend, and
-          databases, but currently my main focus is on frontend ReactJs
+          databases, but currently my main focus is on frontend ReactJs/Angular
           development.
         </p>
         <ArrowContainer>
