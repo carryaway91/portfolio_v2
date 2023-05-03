@@ -8,7 +8,7 @@ import { Heading, Inner, Overlay, Wrap } from "./DesignsStyles";
 import Popup from "../../components/popup/Popup";
 
 const Designs = () => {
-  const designs = [clock, book, city, dog, pokemon, plant];
+  const designs = [clock, book, city, dog, plant];
   const [popup, setPopup] = useState(false);
   const [chosen, setChosen] = useState();
 
