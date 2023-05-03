@@ -3,7 +3,6 @@ import clock from "../../img/clock.png";
 import book from "../../img/book.png";
 import city from "../../img/city.png";
 import dog from "../../img/dog.jpg";
-import pokemon from "../../img/pokemon.png";
 import plant from "../../img/plant.jpg";
 import { Heading, Inner, Overlay, Wrap } from "./DesignsStyles";
 import Popup from "../../components/popup/Popup";
